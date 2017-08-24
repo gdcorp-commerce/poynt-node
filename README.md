@@ -44,3 +44,33 @@ poynt.getBusiness({
   }
 });
 ```
+
+## Namespaces and methods
+
+### [Businesses](https://poynt.com/docs/api/#businesses-index)
+
+* `getBusiness`
+
+### Stores
+
+### [Orders](https://poynt.com/docs/api/#orders-index)
+
+* `getOrders`
+* `getOrder`
+
+### [Transactions](https://poynt.com/docs/api/#transactions-index)
+
+* `getTransactions`
+* `getTransaction`
+
+### [Business Users](https://poynt.com/docs/api/#business-users-index)
+
+* `getBusinessUsers`
+* `getBusinessUser`
+
+### [Customers](https://poynt.com/docs/api/#customers-index)
+
+* `getCustomers`
+* `getCustomer`
+
+### Webhooks
