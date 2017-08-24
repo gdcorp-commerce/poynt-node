@@ -45,6 +45,8 @@ poynt.getBusiness({
 });
 ```
 
+We'll handle all the request signing, token refresh, etc. for you!
+
 ## Namespaces and methods
 
 ### [Businesses](https://poynt.com/docs/api/#businesses-index)
@@ -72,5 +74,23 @@ poynt.getBusiness({
 
 * `getCustomers`
 * `getCustomer`
+
+### [Catalogs](https://poynt.com/docs/api/#catalogs-index)
+
+* `getCatalogs`
+* `getCatalog`
+* `getFullCatalog`
+* `getCategory`
+
+### [Products](https://poynt.com/docs/api/#products-index)
+
+* `getProducts`
+* `lookupProducts`
+* `getProduct`
+
+### [Taxes](https://poynt.com/docs/api/#taxes-index)
+
+* `getTaxes`
+* `getTax`
 
 ### Webhooks

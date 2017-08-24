@@ -1,9 +1,10 @@
 {
   "name": "poynt",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Poynt Node.js SDK",
   "main": "lib/index.js",
   "dependencies": {
+    "async": "^2.5.0",
     "debug": "^3.0.0",
     "ff": "^0.2.2",
     "jsonwebtoken": "^7.4.3",
