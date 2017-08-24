@@ -2,6 +2,10 @@
 
 This SDK helps you connect to the Poynt API, get/create business information, and send cloud messages to your terminal app.
 
+## Documentation
+
+Check out our [API reference](https://poynt.com/docs/api/) or our [developer guides](https://poynt.com/tag/guides/)!
+
 ## Installation
 
 Install this package:
