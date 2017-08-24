@@ -1,0 +1,30 @@
+{
+  "name": "poynt",
+  "version": "0.0.1",
+  "description": "Poynt Node.js SDK",
+  "main": "lib/index.js",
+  "dependencies": {
+    "debug": "^3.0.0",
+    "ff": "^0.2.2",
+    "jsonwebtoken": "^7.4.3",
+    "request": "^2.81.0",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poynt/poynt-node.git"
+  },
+  "keywords": [
+    "Poynt"
+  ],
+  "author": "Charles Feng <c@poynt.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poynt/poynt-node/issues"
+  },
+  "homepage": "https://github.com/poynt/poynt-node#readme"
+}
