@@ -32,9 +32,11 @@ Then, make a request signed with your app private key:
 ```javascript
 poynt.getBusiness({
   businessId: '00000000-0000-0000-0000-000000000000'
-}).then(function (business) {
-  // congrats on getting a business
-}).catch(function (err) {
-  // deal with your error
+}, function (err, business) {
+  if (err) {
+    // deal with your error
+  } else {
+    // do something with business
+  }
 });
 ```
