@@ -60,10 +60,13 @@ We'll handle all the request signing, token refresh, etc. for you!
 
 * `getHooks`
 * `createHook`
+* `getHook`
+* `deleteHook`
 
 ### [Businesses](https://poynt.com/docs/api/#businesses-index)
 
 * `getBusiness`
+* `getBusinessByDeviceId`
 
 ### [Stores](https://poynt.com/docs/api/#stores-index)
 
@@ -92,6 +95,7 @@ We'll handle all the request signing, token refresh, etc. for you!
 * `createCatalog`
 * `createFullCatalog`
 * `updateCatalog`
+* `deleteCatalog`
 * `getCategory`
 * `createCategory`
 * `lookupCategories`
