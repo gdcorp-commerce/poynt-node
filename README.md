@@ -51,11 +51,23 @@ We'll handle all the request signing, token refresh, etc. for you!
 
 ## Namespaces and methods
 
+### [CloudMessages](https://poynt.com/docs/api/#cloudmessages-index)
+
+* `sendCloudMessage`
+* `sendRawCloudMessage`
+
+### [Hooks](https://poynt.com/docs/api/#hooks-index)
+
+* `getHooks`
+* `createHook`
+
 ### [Businesses](https://poynt.com/docs/api/#businesses-index)
 
 * `getBusiness`
 
-### Stores
+### [Stores](https://poynt.com/docs/api/#stores-index)
+
+* `getStore`
 
 ### [Orders](https://poynt.com/docs/api/#orders-index)
 
@@ -67,11 +79,6 @@ We'll handle all the request signing, token refresh, etc. for you!
 * `getTransactions`
 * `getTransaction`
 
-### [Business Users](https://poynt.com/docs/api/#business-users-index)
-
-* `getBusinessUsers`
-* `getBusinessUser`
-
 ### [Customers](https://poynt.com/docs/api/#customers-index)
 
 * `getCustomers`
@@ -82,17 +89,34 @@ We'll handle all the request signing, token refresh, etc. for you!
 * `getCatalogs`
 * `getCatalog`
 * `getFullCatalog`
+* `createCatalog`
+* `createFullCatalog`
+* `updateCatalog`
 * `getCategory`
+* `createCategory`
+* `lookupCategories`
+* `deleteCategory`
+* `updateCategory`
 
 ### [Products](https://poynt.com/docs/api/#products-index)
 
 * `getProducts`
+* `getProductsSummary`
 * `lookupProducts`
 * `getProduct`
+* `createProduct`
+* `deleteProduct`
+* `updateProduct`
 
 ### [Taxes](https://poynt.com/docs/api/#taxes-index)
 
 * `getTaxes`
 * `getTax`
+* `createTax`
+* `deleteTax`
+* `updateTax`
 
-### Webhooks
+### [Business Users](https://poynt.com/docs/api/#business-users-index)
+
+* `getBusinessUsers`
+* `getBusinessUser`
