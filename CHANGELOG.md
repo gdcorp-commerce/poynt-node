@@ -1,5 +1,8 @@
 ## Change Log
 
+### v0.0.5 (2017/08/28)
+- Support for `deleteCatalog`, `getHook`, `deleteHook`, `getBusinessByDeviceId` endpoints.
+
 ### v0.0.4 (2017/08/27)
 - Support for sending cloud messages to terminals: `sendRawCloudMessage` and `sendCloudMessage` endpoints.
 - Support for `getStore`, `createCatalog`, `createFullCatalog`, `updateCatalog`, `createCategory`, `lookupCategories`, `deleteCategory`, `updateCategory`, `getProductsSummary`, `createProduct`, `deleteProduct`, `updateProduct`, `createTax`, `deleteTax`, `updateTax` endpoints.
