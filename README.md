@@ -16,10 +16,11 @@ npm install poynt --save
 
 ## Usage
 
-You can connect to the Poynt API by passing either a filename or a string containing your PEM-encoded private key you downloaded from Poynt.net.
+You can connect to the Poynt API by passing either a filename or a string containing your PEM-encoded private key you downloaded from Poynt.net. If `region` param is not set, the SDK uses `services.poynt.net` endpoint. If you need to hit `services-eu.poynt.net`, you need to pass `region: 'eu'`.
 
 ```javascript
 var poynt = require('poynt')({
+  // region: 'eu',
   applicationId: 'urn:aid:your-application-id',
   filename: __dirname + '/key.pem'
 });

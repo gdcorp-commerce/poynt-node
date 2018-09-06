@@ -1,5 +1,8 @@
 ## Change Log
 
+### v0.0.6 (2018/09/07)
+- Support for `eu` region (endpoint: services-eu.poynt.net).
+
 ### v0.0.5 (2017/08/28)
 - Support for `deleteCatalog`, `getHook`, `deleteHook`, `getBusinessByDeviceId` endpoints.
 
