@@ -113,6 +113,11 @@ We'll handle all the request signing, token refresh, etc. for you!
 * `deleteProduct`
 * `updateProduct`
 
+### Reports
+
+* `getReports`
+* `createReport`
+
 ### [Taxes](https://poynt.com/docs/api/#taxes-index)
 
 * `getTaxes`
