@@ -1,5 +1,8 @@
 ## Change Log
 
+### v0.0.7 (2019/09/25)
+- Support for reports APIs: `getReports`, `createReport`
+
 ### v0.0.6 (2018/09/07)
 - Support for `eu` region (endpoint: services-eu.poynt.net).
 
