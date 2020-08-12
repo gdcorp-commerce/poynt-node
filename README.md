@@ -56,6 +56,7 @@ We'll handle all the request signing, token refresh, etc. for you!
 
 * `sendCloudMessage`
 * `sendRawCloudMessage`
+* `sendPaymentBridgeMessage`
 
 ### [Hooks](https://poynt.com/docs/api/#hooks-index)
 
