@@ -19,19 +19,19 @@ npm install poynt --save
 You can connect to the Poynt API by passing either a filename or a string containing your PEM-encoded private key you downloaded from Poynt.net. If `region` param is not set, the SDK uses `services.poynt.net` endpoint. If you need to hit `services-eu.poynt.net`, you need to pass `region: 'eu'`.
 
 ```javascript
-var poynt = require('poynt')({
+var poynt = require("poynt")({
   // region: 'eu',
-  applicationId: 'urn:aid:your-application-id',
-  filename: __dirname + '/key.pem',
+  applicationId: "urn:aid:your-application-id",
+  filename: __dirname + "/key.pem",
 });
 ```
 
 or
 
 ```javascript
-var poynt = require('poynt')({
-  applicationId: 'urn:aid:your-application-id',
-  key: '-----BEGIN RSA PRIVATE KEY-----\n.....\n-----END RSA PRIVATE KEY-----',
+var poynt = require("poynt")({
+  applicationId: "urn:aid:your-application-id",
+  key: "-----BEGIN RSA PRIVATE KEY-----\n.....\n-----END RSA PRIVATE KEY-----",
 });
 ```
 
@@ -40,7 +40,7 @@ Then, make a request signed with your app private key:
 ```javascript
 poynt.getBusiness(
   {
-    businessId: '00000000-0000-0000-0000-000000000000',
+    businessId: "00000000-0000-0000-0000-000000000000",
   },
   function (err, business) {
     if (err) {
@@ -107,6 +107,14 @@ We'll handle all the request signing, token refresh, etc. for you!
 - `lookupCategories`
 - `deleteCategory`
 - `updateCategory`
+
+### Invoices
+
+- `getInvoices`
+- `getInvoice`
+- `createInvoice`
+- `sendInvoiceReminder`
+- `cancelInvoice`
 
 ### [Products](https://poynt.com/docs/api/#products-index)
 
