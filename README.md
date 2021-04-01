@@ -56,6 +56,11 @@ We'll handle all the request signing, token refresh, etc. for you!
 
 ## Namespaces and methods
 
+### [Poynt Collect](https://docs.poynt.com/app-integration/poynt-collect/)
+
+- `tokenizeCard`
+- `charge`
+
 ### [CloudMessages](https://poynt.com/docs/api/#cloudmessages-index)
 
 - `sendCloudMessage`
@@ -87,6 +92,7 @@ We'll handle all the request signing, token refresh, etc. for you!
 
 - `getTransactions`
 - `getTransaction`
+- `voidTransaction`
 
 ### [Customers](https://poynt.com/docs/api/#customers-index)
 
@@ -151,3 +157,124 @@ We'll handle all the request signing, token refresh, etc. for you!
 - `getBusinessApplicationAccount`
 - `getBusinessApplicationOrders`
 - `getBusinessApplicationProfile`
+
+## Examples
+
+### Charging a token from [Poynt Collect V2](https://sellbot.co/collect)
+
+The most basic use case is just entering an amount and charging:
+
+```
+poynt.charge(
+  {
+    action: "SALE",
+    amounts: {
+      currency: "USD",
+      transactionAmount: 500,
+      orderAmount: 500,
+    },
+    businessId: "84fa5bf5-bd51-4653-80de-ce46348f7659",
+    token: "...token...",
+  },
+  function (err, transaction) {
+    if (err) {
+      // deal with your error
+      console.log(err);
+    } else {
+      // do something with transaction
+      console.log(transaction);
+    }
+  }
+);
+```
+
+Many other fields are accepted – including address, phone, and references. The following code makes a charge, fetches the full transaction, and then voids it.
+
+```
+poynt.charge(
+  {
+    action: "SALE",
+    address: {
+      line1: "858 University Ave",
+      line2: "",
+      city: "Palo Alto",
+      territory: "CA",
+      countryCode: "US",
+      postalCode: "94301",
+    },
+    amounts: {
+      currency: "USD",
+      transactionAmount: 500,
+      orderAmount: 500,
+    },
+    businessId: "84fa5bf5-bd51-4653-80de-ce46348f7659",
+    emailReceipt: true,
+    phone: {
+      ituCountryCode: "1",
+      areaCode: "234",
+      localPhoneNumber: "5678901",
+    },
+    receiptEmailAddress: "charles@example.com",
+    references: [
+      {
+        customType: "WEBSITE_ID",
+        id: "123456",
+        type: "CUSTOM",
+      },
+      {
+        customType: "CHANNEL_ORDER_ID",
+        id: "abcdef",
+        type: "CUSTOM",
+      },
+    ],
+    sourceApp: "Online Store",
+    token: "...token...",
+  },
+  function (err, transaction) {
+    if (err) {
+      // deal with your error
+      return console.log(err);
+    }
+
+    console.log("Transaction processed", JSON.stringify(transaction, null, 2));
+
+    // get the transaction
+    poynt.getTransaction(
+      {
+        businessId: "84fa5bf5-bd51-4653-80de-ce46348f7659",
+        transactionId: transaction.id,
+      },
+      function (err, transaction) {
+        if (err) {
+          // deal with your error
+          return console.log(err);
+        }
+
+        console.log(
+          "Transaction fetched",
+          JSON.stringify(transaction, null, 2)
+        );
+
+        // void the transaction
+        poynt.voidTransaction(
+          {
+            businessId: "84fa5bf5-bd51-4653-80de-ce46348f7659",
+            transactionId: transaction.id,
+          },
+          function (err, voidedTransaction) {
+            if (err) {
+              // deal with your error
+              return console.log(err);
+            }
+
+            console.log(
+              "Transaction voided",
+              JSON.stringify(voidedTransaction, null, 2)
+            );
+          }
+        );
+      }
+    );
+  }
+);
+```
