@@ -93,6 +93,7 @@ We'll handle all the request signing, token refresh, etc. for you!
 - `getTransactions`
 - `getTransaction`
 - `voidTransaction`
+- `refundTransaction`
 
 ### [Customers](https://poynt.com/docs/api/#customers-index)
 
