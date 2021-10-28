@@ -279,3 +279,9 @@ poynt.charge(
   }
 );
 ```
+
+### Apple Pay Registration
+
+- `registerApplePayMerchant`
+- `unregisterApplePayMerchant`
+- `getApplePayMerchant`
