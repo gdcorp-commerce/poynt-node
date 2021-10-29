@@ -285,3 +285,4 @@ poynt.charge(
 - `registerApplePayMerchant`
 - `unregisterApplePayMerchant`
 - `getApplePayMerchant`
+- `getApplePayDomainAssociationFile`
