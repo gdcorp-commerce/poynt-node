@@ -1,6 +1,6 @@
 {
   "name": "poynt",
-  "version": "0.0.24",
+  "version": "0.0.25",
   "description": "Poynt Node.js SDK",
   "main": "lib/index.js",
   "dependencies": {
