@@ -87,6 +87,8 @@ We'll handle all the request signing, token refresh, etc. for you!
 
 - `getOrders`
 - `getOrder`
+- `createOrder`
+- `completeOrder`
 
 ### [Transactions](https://poynt.com/docs/api/#transactions-index)
 
@@ -94,6 +96,7 @@ We'll handle all the request signing, token refresh, etc. for you!
 - `getTransaction`
 - `voidTransaction`
 - `refundTransaction`
+- `createTransaction`
 
 ### [Customers](https://poynt.com/docs/api/#customers-index)
 
