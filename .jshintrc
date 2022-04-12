@@ -3,7 +3,6 @@
   "bitwise"   : true,
   "curly"     : true,
   "eqeqeq"    : true,
-  "esnext"    : true,
   "forin"     : true,
   "freeze"    : true,
   "immed"     : true,
@@ -15,5 +14,6 @@
   "quotmark"  : "single",
   "trailing"  : true,
   "undef"     : true,
-  "unused"    : "vars"
+  "unused"    : "vars",
+  "esversion" : 9
 }
