@@ -59,6 +59,3 @@ typings/
 
 # Jetbrains IDE
 .idea
-
-# package-lock
-package-lock.json
