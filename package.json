@@ -9,7 +9,8 @@
     "ff": "^0.2.2",
     "jsonwebtoken": "^7.4.3",
     "request": "^2.81.0",
-    "uuid": "^3.1.0"
+    "uuid": "^3.1.0",
+    "validator": "^13.7.0"
   },
   "devDependencies": {},
   "scripts": {
