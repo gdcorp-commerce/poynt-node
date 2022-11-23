@@ -1,6 +1,6 @@
 {
   "name": "poynt",
-  "version": "0.0.36",
+  "version": "0.0.37",
   "description": "Poynt Node.js SDK",
   "main": "lib/index.js",
   "dependencies": {
@@ -9,10 +9,10 @@
     "ff": "^0.2.2",
     "jsonwebtoken": "^7.4.3",
     "request": "^2.81.0",
+    "retry-request": "^5.0.2",
     "uuid": "^3.1.0",
     "validator": "^13.7.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "npm test"
   },
