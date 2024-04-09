@@ -78,6 +78,7 @@ We'll handle all the request signing, token refresh, etc. for you!
 
 - `getBusiness`
 - `getBusinessByDeviceId`
+- `getMerchantPaymentAccount`
 
 ### [Stores](https://poynt.com/docs/api/#stores-index)
 
