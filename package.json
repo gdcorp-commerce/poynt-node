@@ -1,6 +1,6 @@
 {
   "name": "poynt",
-  "version": "0.0.43",
+  "version": "0.0.44",
   "description": "Poynt Node.js SDK",
   "main": "lib/index.js",
   "dependencies": {
@@ -9,7 +9,7 @@
     "ff": "^0.2.2",
     "jsonwebtoken": "^7.4.3",
     "request": "^2.81.0",
-    "uuid": "^3.1.0",
+    "uuid": "^9.0.1",
     "validator": "^13.7.0"
   },
   "devDependencies": {},
